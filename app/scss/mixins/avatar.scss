@@ -1,0 +1,7 @@
+/* Миксин для круглой аватарки */
+@mixin circle($w, $h) {
+  display: block;
+  border-radius:100px;
+	width: $w;
+	height: $h;
+}

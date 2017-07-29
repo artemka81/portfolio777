@@ -1,0 +1,10 @@
+mixin User($user)
+	if $user == 'admin'
+		include ../components/header/admin/admin.pug
+	
+	else if $user == 'user'
+		include ../components/header/user/user.pug
+	
+	else 
+		include ../components/header/guest/guest.pug
+	

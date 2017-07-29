@@ -1,0 +1,28 @@
+
+.wrapper{
+	padding: 30px 16px;
+	margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.wrapper{
+		padding: 30px 16px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.wrapper{
+		padding: 60px 0 80px;
+		max-width: 1140px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) {}

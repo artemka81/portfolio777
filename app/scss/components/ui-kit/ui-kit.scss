@@ -1,0 +1,19 @@
+.ui-kit{
+	&__name{
+		width: 100%;
+		font-size: 32px;
+		margin-bottom:50px;
+	}
+}
+
+
+
+.typography{
+	display: flex;
+	&__aside{
+		width: 28%;
+	}
+	&__main{
+			width: 72%;
+	}
+}

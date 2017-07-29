@@ -1,0 +1,35 @@
+.nav{
+	display: flex;
+  flex-direction:column;
+  padding: 30px 0 0 30px;
+  &__item{
+		color:$color-header;
+		font-size: 16px;
+		padding-bottom: 25px;
+		font-weight: 600;
+	}
+	&__item:hover, .active{
+		text-decoration: none;
+	}
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.nav{
+		display: flex;
+		flex-direction:row;
+		align-items:flex-end;;
+		padding: 0;
+		&__item{
+			font-size: 18px;
+			font-weight: 400;
+			padding:0 50px 40px 0; 
+		}
+	}
+}

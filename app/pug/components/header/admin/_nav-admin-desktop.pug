@@ -1,0 +1,33 @@
+.wrapper-nav-admin#wrapper-nav
+	a.nav-mobile(href="#")
+	.user-profile--admin
+		.user-profile__avatar
+			img.user-profile__img(src="../img/avatar_53x53.jpg" alt="avatar")
+		.user-profile__wrapper
+			span.user-profile__name--admin Юрий Ключевский
+			.user-profile__btn--admin
+				+button("Администратор", "#")(class="btn__small--admin")
+	.nav-admin__tabs
+		section.nav-admin__wrapper-tabs
+			input(type="radio" class="nav-admin__tab1" id="tab1" name="tabs" checked)
+			label(for="tab1") Страницы
+			input(type="radio" class="nav-admin__tab2" id="tab2" name="tabs" checked)
+			label(for="tab2" class="active") Админка
+			section.nav-admin__wrapper-links1#links1
+				nav.nav-admin__links1
+					a(href="#") Главная
+					a(href="#") Обо мне
+					a(href="#") Работа
+					a(href="#") Блог
+					a(href="#") Контакты
+			section.nav-admin__wrapper-links2#links2
+				nav.nav-admin__links2
+					a(href="#" class="nav-admin__links2--about") Обо мне
+					a(href="#" class="nav-admin__links2--contact") Контакты
+					a(href="#" class="nav-admin__links2--post") Пост
+					a(href="#" class="nav-admin__links2--work") Работа
+					a(href="#" class="nav-admin__links2--message") Сообщения
+					a(href="#" class="nav-admin__links2--exit") 
+						i.fa.fa-sign-out 
+							span Вход
+

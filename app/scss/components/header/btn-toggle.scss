@@ -1,0 +1,33 @@
+.menu-toggle{
+	width: 100%;
+	height: 40px;
+	border: 0;
+	background: rgba(0,0,0,.85);
+	z-index: 5;
+	font-size: 14px;
+	font-weight: 700;
+	color:white;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 0 0 0 50px;
+	letter-spacing: 1.2px;
+	&::before{
+			@include iconBefore($icon-hamburger, 'inherit', 24px);
+			top: 6px;
+			left: 15px;
+		}
+
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.menu-toggle{
+		display: none;
+	}
+}

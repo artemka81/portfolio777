@@ -1,0 +1,22 @@
+extends layouts/_default
+
+
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'ui',
+      title: 'UI-KIT',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+    }
+
+block header
+  include partials/_header.pug
+   
+block main
+  include pages/ui-kit/_main.pug
+
+block footer
+  include partials/_footer.pug

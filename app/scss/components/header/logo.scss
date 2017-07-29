@@ -1,0 +1,52 @@
+.logo-wrapper{
+	position: relative;
+	min-width: 400px;
+	z-index: 999;
+}
+.logo{
+	position: absolute;
+	top: 2.5em;
+	left: 3.75em;
+	color:$color-header;
+	
+	&__name{
+		position: relative;
+		display: block;
+		font-size: 26px;
+		font-weight: 700;
+		text-decoration: none;
+		margin-bottom: 12px;
+		&::before{
+			@include iconBefore($icon-plane, 'inherit', 32px);
+			top: 0;
+			left: -42px;
+		}
+		&--black{
+			color:$color-header-black;
+		}
+	}
+	
+		
+	&__description{
+		padding-top:16px; 
+		font-size: 16px;
+		color:$color-header-description;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.logo{
+		top: 2.875em;
+		left: 6.250em;
+		&__name{
+			font-size: 32px;
+		}
+	}
+}

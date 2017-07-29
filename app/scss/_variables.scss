@@ -1,0 +1,50 @@
+// Base settings
+$white:  #ffffff;
+$black:  #000000;
+$yellow: #ffe400;
+$blue: 	#367ba4;
+
+// -------------------------------------
+
+
+// Header
+// -------------------------------------
+$bg-header: #3379a2;
+$color-header: $white;
+$color-header-black: $black;
+$color-header-description:#81c5ee;
+$color-topbar-nav:#ffe400;
+
+
+// Footer
+// -------------------------------------
+$bg-footer:#252525;
+
+// Icon http://astronautweb.co/snippet/font-awesome/
+$icon-glass: "\f000";
+$icon-plane: "\f1d8";
+$icon-hamburger: "\f0c9";
+$icon-close: "\f00d";
+$icon-edit: "\f044";
+$icon-plus: "\f055";
+$icon-mail: "\f0e0";
+$icon-exit: "\f08b";
+
+// Common
+$spacer: 1em;
+
+// Typography
+// -------------------------------------
+$font-family-base: 'Open Sans', sans-serif; 
+$font-size-base: 16px; 
+$headings-color: inherit;
+$headings-font-family: $font-family-base;
+$headings-font-weight: 400;
+$headings-line-height: 1.1;
+
+// Btn
+// -------------------------------------
+
+// Admin mobile menu
+// -------------------------------------
+$tabs-label-color:#037ec6;

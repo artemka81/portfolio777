@@ -1,0 +1,34 @@
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
+}
+
+.btn{
+	display: inline-block;	
+	color:white;
+	font-weight: normal;
+	font-size: 16px;
+	padding: 8px 16px;
+	border-radius:50px;
+	text-decoration: none;
+	margin-right: 12px;
+	background: tomato;
+}
+.btn__small {
+	font-size: 13px;
+	padding: 6px 16px;
+	@include button-bg(#225a79);
+	&--admin{
+		font-size: 13px;
+		font-weight: bold;
+		@include button-bg(#a0cce5);
+	}
+}
+
+

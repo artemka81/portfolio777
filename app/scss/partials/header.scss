@@ -1,0 +1,23 @@
+.header{
+	width: 100%;
+	height: 200px;
+	background-image: url("../img/bg-img-header.jpg");
+	background-repeat: no-repeat;
+	background-color: $bg-header;
+	background-position:center;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.header{
+		display: flex;
+		flex-direction:row;
+  	flex-wrap:wrap;
+  	
+	}
+}
