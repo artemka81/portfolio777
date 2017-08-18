@@ -20,7 +20,14 @@
 	text-decoration: none;
 	margin-right: 12px;
 	background:$btn-bg-blue;
-	
+	&--yellow{
+		@include button-bg($btn-bg-yellow);
+	}
+	&__shadow{
+		color:$btn-color-blue;
+		background: $btn-bg-white;
+		box-shadow:0 6px  16px rgba(23,50,66,0.75);
+	}
 	&__post{
 		color:$btn-color-blue;
 		background: $btn-bg-white;
@@ -58,10 +65,21 @@
 	padding: 6px 16px;
 	@include button-bg(#225a79);
 	&--admin{
+		padding: 8px 16px;
 		font-size: 13px;
 		font-weight: bold;
 		@include button-bg(#a0cce5);
 	}
+	&--red{
+		padding: 8px 16px;
+		font-size: 14px;
+		font-weight: 600;
+		@include button-bg($btn-bg-red);
+	}
 }
 
 
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	
+}

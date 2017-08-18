@@ -1,0 +1,33 @@
+@mixin checkbox{
+	input.checkbox[type="checkbox"]{
+		 display:none; 
+	}
+	input.checkbox[type="checkbox"] + label{
+		 cursor: pointer;
+	}
+	input.checkbox[type="checkbox"] + label::before{
+		content: "";
+	  display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-image: url("../img/checkbox-off.png");
+		position: absolute;
+		top: 0; 
+		left: 0;
+		background-repeat: no-repeat;
+	}
+	input.checkbox[type="checkbox"]:checked + label::before{
+		content: "";
+	  display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-image: url("../img/checkbox-on.png");
+		position: absolute;
+		top: 0; 
+		left: 0;
+		background-repeat: no-repeat;
+	}
+	.checkbox-label{
+		padding-left: 28px;
+	}
+}

@@ -8,17 +8,37 @@
 
 
 
-.typography, .button{
+.typography, .button, .elements{
 	display: flex;
 	flex-direction:column;
-	
 }
 
-.button__main{
+
+
+.ui-kit__main{
+margin-bottom:40px;
 	.btn{
 		margin: 0 20px 20px 0;
 	}
 }
+
+
+.elements{
+	&__avatar--small{
+		float: left;
+		@include avatar(50px, 50px,"../img/avatar_53x53.jpg");
+	}
+	&__avatar--big{
+		float: left;
+		@include avatar(200px, 200px,"../img/avatar_220x220.jpg");
+	}
+	&__checkbox{
+		position: relative;
+		margin-bottom: 40px;
+		@include checkbox
+	}
+}
+
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
@@ -27,13 +47,13 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.typography, .button{
+	.typography, .button, .elements{
 		display: flex;
 		flex-direction:row;
-		&__aside{
+		.ui-kit__aside{
 			width: 28%;
 		}
-		&__main{
+		.ui-kit__main{
 				width: 72%;
 		}
 }

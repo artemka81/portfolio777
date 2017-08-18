@@ -1,3 +1,9 @@
 mixin button(text, link)
 	a(class!=attributes.class href= link).btn= text
 
+mixin checkbox
+	input.checkbox(type='checkbox', id="checkbox" name='remember' checked)
+	label.checkbox-label(for='checkbox')
+		| Запомнить себя
+	
+

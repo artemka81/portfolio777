@@ -4,4 +4,16 @@
   border-radius:100px;
 	width: $w;
 	height: $h;
+	
+}
+
+@mixin avatar($w, $h, $img){
+	display: block;
+  border-radius:100px;
+	width: $w;
+	height: $h;
+	margin: 0 40px 40px 0;
+	background-image: url($img);
+	background-size: cover;
+	background-position: center;
 }
