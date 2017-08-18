@@ -6,7 +6,7 @@ body{
 }
 
 a{
-	color:$headings-color;
+	color:$color-link;
 }
 
 h1,
@@ -48,8 +48,22 @@ h6{
 	font-weight: 800;
 }
 
-p{
-	margin: 0;
+p,li{
+	margin: 0 0 10px 0;
 	padding: 0;
 	line-height:32px;
+}
+
+li{
+	list-style-type: none;
+	position: relative;
+	&:before{
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -12px;
+    width: 5px;
+		height: 5px;
+		background: $color-li;
+  }
 }

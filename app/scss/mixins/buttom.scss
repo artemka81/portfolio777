@@ -11,14 +11,47 @@
 
 .btn{
 	display: inline-block;	
+	position: relative;
 	color:white;
-	font-weight: normal;
+	font-weight: 600;
 	font-size: 16px;
-	padding: 8px 16px;
+	padding: 13px 30px;
 	border-radius:50px;
 	text-decoration: none;
 	margin-right: 12px;
-	background: tomato;
+	background:$btn-bg-blue;
+	
+	&__post{
+		color:$btn-color-blue;
+		background: $btn-bg-white;
+		border:2px solid #dde8ee;
+	}
+	&__pref{
+		color:$btn-color-blue;
+		background: $btn-bg-white;
+		padding-left:40px; 
+		border:2px solid #dde8ee;
+		&:before{
+			content: " ← ";
+			position: absolute;
+			top: 12px;
+			left: 24px;
+			color:$btn-color-blue;
+		}
+	}
+	&__next{
+		color:$btn-color-blue;
+		background: $btn-bg-white;
+		border:2px solid #dde8ee;
+		padding-right:40px; 
+		&:after{
+			content: " →";
+			position: absolute;
+			top: 12px;
+			left: 90px;
+			color:$btn-color-blue;
+		}
+	}
 }
 .btn__small {
 	font-size: 13px;

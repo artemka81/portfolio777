@@ -7,7 +7,7 @@
 	position: absolute;
 	top: 2.5em;
 	left: 3.75em;
-	color:$color-header;
+	
 	
 	&__name{
 		position: relative;
@@ -16,6 +16,7 @@
 		font-weight: 700;
 		text-decoration: none;
 		margin-bottom: 12px;
+		color:#ffffff;
 		&::before{
 			@include iconBefore($icon-plane, 'inherit', 32px);
 			top: 0;

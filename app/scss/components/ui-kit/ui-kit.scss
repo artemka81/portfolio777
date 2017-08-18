@@ -8,12 +8,38 @@
 
 
 
-.typography{
+.typography, .button{
 	display: flex;
-	&__aside{
-		width: 28%;
+	flex-direction:column;
+	
+}
+
+.button__main{
+	.btn{
+		margin: 0 20px 20px 0;
 	}
-	&__main{
-			width: 72%;
-	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.typography, .button{
+		display: flex;
+		flex-direction:row;
+		&__aside{
+			width: 28%;
+		}
+		&__main{
+				width: 72%;
+		}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) {
+	
+}
 }

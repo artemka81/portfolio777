@@ -12,6 +12,9 @@
 	&__copy, &__nav{
 		padding-bottom: 40px;
 	}
+	&__copy-link{
+		color:#ffffff;
+	}
 	&__copy{
 		line-height: 1.4;
 		p{
@@ -28,6 +31,7 @@
 		margin:0 25px 0 0;
 		font-size: 32px;
 		text-decoration: none;
+		color:#ffffff;
 		.fa{
 			vertical-align:top;
 		}
