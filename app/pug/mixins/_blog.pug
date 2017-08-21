@@ -1,0 +1,8 @@
+mixin blog-item(title, img, link)
+	.blog-item
+		a.blog-item__link(href="/"+ link)
+			img.blog-item__img(src= img alt="Название поста")
+		.blog-item__desc
+			span.blog-item__title= title
+			+button("Читать", "/blog-page.html")(class="btn__post")
+		

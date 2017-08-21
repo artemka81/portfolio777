@@ -1,0 +1,19 @@
+.post-page{
+	width: 100%;
+	&__author, &__link, &__date, &__comments-num{
+		font-size: 14px;
+		font-weight: 600;
+		margin-right: 20px;
+		line-height: 1.5;
+	}
+	&__link{
+		text-decoration: none;
+		color:#037ec6;
+	}
+	&__date{
+		color:#b4bbc2;
+	}
+	&__img{
+		padding: 18px 0 36px 0;
+	}
+}

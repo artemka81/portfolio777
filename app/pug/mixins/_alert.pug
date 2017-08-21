@@ -1,0 +1,18 @@
+mixin alert-email-pass-error
+	.alert-error
+		p Введите верные данные для входа или 
+		a(href="#") воспользуйтесь восстановлением пароля, 
+		p чтобы войти на сайт.
+mixin alert-email-error
+	.alert-error
+		p Используйте другой email чтобы создать новый аккаунт.
+		p Или воспользуйтесь 
+		a(href="#") восстановлением пароля,
+		p чтобы войти на сайт.
+
+mixin alert(text)
+		if block
+			div(class!=attributes.class).alert= text
+			block
+		else
+			div(class!=attributes.class).alert= text

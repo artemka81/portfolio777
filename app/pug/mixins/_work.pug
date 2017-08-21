@@ -1,0 +1,7 @@
+mixin work-item(title, link)
+	.work-item
+		a.work-item__link(href="/"+ link)
+		.work-item__desc
+			span.work-item__title= title
+			+button("Смотреть кейс", "/work-page.html")(class="btn__post")
+		
