@@ -11,6 +11,40 @@ img {
   height: auto;
 }
 
+a[href$=".pdf"]{
+	text-decoration: underline;
+}
+
+textarea{
+	overflow: auto;
+	outline:none;
+	border: 2px solid #e0e9ee;
+	border-radius: 6px;
+	padding: 16px;
+	height: 100px;
+	width: 100%;
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+::-webkit-input-placeholder {color:rgba(56,55,55, .5);}
+::-moz-placeholder          {color:rgba(56,55,55, .5);}/* Firefox 19+ */
+:-moz-placeholder           {color:rgba(56,55,55, .5);}/* Firefox 18- */
+:-ms-input-placeholder      {color:rgba(56,55,55, .5);}
+
+
+
+
+
+
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
 	.wrapper{

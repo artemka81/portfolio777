@@ -1,0 +1,174 @@
+/* comment-form */
+.comments{
+	display: flex;
+	flex-direction:column;
+	width: 100%;
+}
+.comments__name{
+	display: block;
+	font-weight: 900;
+	width: 100%;
+	height: 70px;
+	color:#383737;
+	position: relative;
+	padding-left: 70px;
+
+	&:after{
+		content:"";
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include avatar(50px, 50px,"../img/avatar_53x53.jpg");
+	}
+
+}
+.comments__input{
+	width: 100%;
+	.alert{margin: 10px 0;}
+}
+
+/* comment */
+.comment{
+	display: flex;
+	flex-direction: column;	
+	background: $comment-bg;
+	padding: 20px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	
+	&__name{
+		font-weight: 900;
+		padding:0 0 0 70px;
+		margin:0 20px 10px 0;
+		position: relative;
+		&:before{
+			content:"";
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include avatar(50px, 50px,"../img/avatar_53x53.jpg");
+		}
+	}
+	&__date{
+		position:relative;
+		padding-left: 26px;
+		margin-left: 70px;
+		color:$comment-date-color;
+		&:before{
+			content:"";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 18px;
+			height: 18px;
+			background-image: url(../img/clock.png);
+
+		}
+	}
+	&__text{
+		line-height: 1.4;
+
+	}
+}
+
+
+.comment-wrapper{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+
+/* comment-auth */
+.comment-auth{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background: $comment-bg-auth;
+	border-radius:6px;
+	padding: 40px 0;
+}
+
+ /* comment-user */
+.comment-user{
+	position: relative;
+	background: $comment-bg-auth;
+	padding: 20px;
+	width: 100%;
+	&__date{
+		color:$comment-date-color;
+	}
+	&__name, &__attach{
+		font-weight: bold;
+		a{
+			font-weight: 500;
+			text-decoration: none;
+		}
+	}
+
+}
+.comment-user .btn{
+	margin: 0 !important;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+.comment-user-wrapper{
+	padding-bottom: 40px;
+}
+
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.comments__name{
+		height: auto;
+	}
+
+	.comments__input{
+		margin-left: 68px;
+		width: calc(100% - 68px);		
+	}
+	.comment{
+		flex-direction: row;
+		flex-wrap:wrap;
+		&__name, &__text{
+			padding:0 0 0 70px;
+		}
+		&__text{
+			width: 100%;
+		}
+		&__date{
+			margin-left: 0;
+		}
+	}
+	
+	.comment-wrapper{
+		flex-direction: row;
+		margin-bottom: 0;
+	}
+	
+	.comment-auth{
+		padding: 50px 0;
+	}
+
+	.comment-user-wrapper{
+		padding-bottom: 0;
+	}
+
+	.comment-user .btn{
+	top: 20px;
+	right: 20px;
+	bottom: auto;
+	left: auto;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) {}

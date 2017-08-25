@@ -54,10 +54,20 @@ margin-bottom:40px;
 
 .components{
 	flex-wrap: wrap;
+	margin-bottom: 40px;
 	.components__item{
-		margin-bottom: 40px;
+		
 	}
 }
+
+
+.comments__input textarea{
+	margin-bottom: 10px;
+}
+
+
+
+
 
 
 /* Extra Small Devices, Phones */ 

@@ -1,12 +1,12 @@
 .work-item{
-	width:360px;
+	max-width:360px;
 	border-radius:6px;
 	box-shadow:0 0 40px rgba(99, 117, 138, 0.3);
 	&__link{
 		display: block;
 		border-radius: 6px 6px 0 0;
-		
 		height: 190px;
+		width: 100%;
 		background-image: url("../img/work/work-img-preview.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -35,7 +35,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	
+	.work-item{
+		width:360px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */

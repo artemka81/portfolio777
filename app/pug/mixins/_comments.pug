@@ -1,0 +1,39 @@
+mixin comment-form(name)
+	.comments
+		.comments__author
+			.comments__name= name
+		.comments__input
+			+alert("Комментарий не может быть пустым")(class="alert--danger")
+			textarea( placeholder="Присоединиться к обсуждению...")
+			+button("Опубликовать", "#")(class="btn__post")
+
+mixin comment(name, text)
+	.comment
+		.comment-wrapper
+			span.comment__name= name
+			span.comment__date 05 мая 2017 года в 15:45
+		p.comment__text= text
+
+mixin comment-auth
+	.comment-auth
+		p 
+			a(href="") Войдите 
+			| или 
+			a(href="") зарегистрируйтесь
+			br
+			| чтобы оставить комментарий
+
+mixin comment-user
+	.comment-user
+		+button("Удалить", "#")(class="btn__small--red")
+		.comment-user-wrapper
+			p.comment-user__date 22 Августа 2017
+			p.comment-user__name Джон До&nbsp;&nbsp;    
+				a(href="mailto:jondoe@gmail.com") jondoe@gmail.com
+			p.comment-user__text
+				| Привет, как дела?) наконец то написал тебе. Посмотри ТЗ нового проекта. Делаем стартап в B2B сфере, юриспуриденция, контракты, право. Инвестиции уже получены и нам нужен классный фронт энд разработчик, как раз - такой как ты. Будет круто если сможешь поработать с нами.
+			p.comment-user__attach Прикреепленные файлы: 
+				a(href="Avrora-platform.pdf" download="Avrora-platform") Avrora-platform.pdf
+
+
+

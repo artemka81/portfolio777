@@ -74,6 +74,19 @@
 						+work-item("Верстка Landing Page", "work-page.html")
 				.components
 					p.ui-kit__subname Пост в блоге - Полный
-					+post-page
-
-
+						+post-page
+				.components
+					p.ui-kit__subname Оставить комментарий
+					h2 Оставить комментарий
+					+comment-form("Артем Кихтенко")
+				.components
+					p.ui-kit__subname Комментарии
+					h2 2 комментария
+					+comment("Джон До", "Замечательный парк, обязательно отправлюсь туда этим летом.")
+					+comment("Джон До", "Замечательный парк, обязательно отправлюсь туда этим летом.")
+				.components
+					p.ui-kit__subname Комментарий - Зарегистрироваться
+					+comment-auth
+				.components
+					p.ui-kit__subname Сообщение от пользователя
+					+comment-user
