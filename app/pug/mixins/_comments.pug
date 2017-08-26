@@ -34,6 +34,11 @@ mixin comment-user
 				| Привет, как дела?) наконец то написал тебе. Посмотри ТЗ нового проекта. Делаем стартап в B2B сфере, юриспуриденция, контракты, право. Инвестиции уже получены и нам нужен классный фронт энд разработчик, как раз - такой как ты. Будет круто если сможешь поработать с нами.
 			p.comment-user__attach Прикреепленные файлы: 
 				a(href="Avrora-platform.pdf" download="Avrora-platform") Avrora-platform.pdf
+mixin profile-comments(url, anchor, comment)
+	.profile-comment
+		a.profile-comment__url(href="/"+ url)= anchor
+		span.comment__date 05 мая 2017 года в 15:45
+		p.profile-comment__text= comment
 
 
 

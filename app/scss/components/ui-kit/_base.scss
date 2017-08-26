@@ -2,8 +2,6 @@
 .wrapper{
 	padding: 30px 16px;
 	margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -67,7 +65,7 @@ textarea{
 /* Medium devices (desktops, 992px and up) */
 @media (min-width : 992px) {
 	.wrapper{
-		padding: 60px 20px 80px;
+		padding:80px 20px;
 		max-width: 1140px;
 	}
 }

@@ -35,7 +35,6 @@
 	padding: 20px;
 	border-radius: 6px;
 	margin-bottom: 10px;
-	
 	&__name{
 		font-weight: 900;
 		padding:0 0 0 70px;
@@ -120,7 +119,29 @@
 }
 
 
+ /* profile-comments */
+ .profile-comment{
+ 	display: flex;
+	flex-wrap: wrap;
+ 	max-width: 800px;
+ 	padding: 20px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	background: $comment-bg;
+	&__url{
+		text-decoration: none;
+		padding:0 20px 10px 0;
+	}
+	&__text{
+		width: 100%;
+		padding-top: 6px;
+		margin: 0;
+	}
+	.comment__date{
+		margin-left: 0px;
 
+	}
+ }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {}
@@ -167,6 +188,12 @@
 	right: 20px;
 	bottom: auto;
 	left: auto;
+	}
+
+	.profile-comment{
+		&__text{
+			padding-top: 0px;
+		}
 	}
 }
 

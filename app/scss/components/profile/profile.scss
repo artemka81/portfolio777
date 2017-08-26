@@ -1,0 +1,39 @@
+.profile-title{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.profile-author{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.profile-comments{
+	width: 100%;
+	margin-bottom: 60px;
+	h2{
+		color:#383737;
+	}
+}
+.profile{
+	&__img{		
+		@include avatar(220px, 220px, "../img/avatar_220X220.jpg");
+		margin-right: 60px;
+	}
+	&__info{
+		span{
+			font-size: 14px;
+			font-weight: 600;
+			color:$profile-info-color-span;
+		}
+		p{
+			a{
+				color:inherit;
+				text-decoration: none;
+			}
+		}
+	}
+}

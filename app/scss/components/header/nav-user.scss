@@ -42,7 +42,7 @@
 		font-size: 18px;
 		font-weight: 900;
 		color:$white;
-		padding-bottom: 16px;
+		padding-bottom: 8px;
 		&--admin{
 			font-size: 18px;
 			font-weight: 900;
@@ -118,6 +118,7 @@
 			@include circle(50px, 50px);
 		}
 		&__name{
+			
 			&--admin{
 				color:#383737;
 				font-weight: 900;

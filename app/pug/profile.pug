@@ -1,0 +1,40 @@
+extends layouts/_default
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'home',
+      title: 'user',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+
+    }
+
+block header
+  include partials/_header.pug
+
+block main
+  section.profile
+    .wrapper
+      .profile-title
+        h1 Профиль
+        +button("Редактировать", "profile-edit.html")(class="btn--yellow")
+      .profile-author
+        .profile__img
+        .profile__info
+          span Имя и фамилия
+          p Емельян Казаков
+          span Email
+          p 
+            a(href="mailto:plat@mail.ru") plat@mail.ru
+          span Страна, Город
+          p Pоссия, Казань
+      .profile-comments
+        h2 Комментарии пользователя
+        +profile-comments("#", "Поездка в LA", "Замечательный парк, обязательно отправлюсь туда этим летом.")
+        +profile-comments("#", "Ноутбук для веб-разработчика", "Замечательный парк, обязательно отправлюсь туда этим летом.")
+        +profile-comments("#", "Настройка Sublime", "Замечательный парк, обязательно отправлюсь туда этим летом.")
+
+block footer
+  include partials/_footer.pug
