@@ -8,7 +8,7 @@
 }
 
 @mixin avatar($w, $h, $img){
-	display: block;
+	display: table;
   border-radius:100px;
 	width: $w;
 	height: $h;

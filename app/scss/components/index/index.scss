@@ -1,0 +1,65 @@
+.about{
+	border-bottom: 1px solid #e9eff3;
+	
+	&__img{		
+		@include avatar(220px, 220px, "../img/avatar_220X220.jpg");
+		margin-right: 60px;
+	}
+	&__author{
+		flex:1;
+		max-width:800px; 
+		
+	}
+	&__name{
+		color:$about-name-color;
+		margin-bottom:$spacer/2;
+	}
+	&__what{
+		margin-top:$spacer;
+		margin-bottom:$spacer/2;
+	}
+}
+
+.about .btn{
+	margin-top: 1em;
+}
+
+.last-work{
+	&__title{
+		font-weight: bold;
+		font-size: 28px;
+		color:#222222;
+		margin-bottom: 40px;
+		a{
+			color:inherit;
+		}
+	}
+}
+.last-work-grid{
+	width: 100%;
+	margin-bottom: 40px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:center;
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.last-work-grid{
+		justify-content: space-around;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.last-work-grid{
+		justify-content: space-between;
+	}
+}	
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) {
+	
+}

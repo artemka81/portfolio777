@@ -1,6 +1,7 @@
-mixin work-item(title, link)
+mixin work-item(title, link, img)
 	.work-item
 		a.work-item__link(href="/"+ link)
+			img(src= img alt="Название работы")
 		.work-item__desc
 			span.work-item__title= title
 			+button("Смотреть кейс", "/work-page.html")(class="btn__post")
