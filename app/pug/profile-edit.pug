@@ -1,0 +1,47 @@
+extends layouts/_default
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'home',
+      title: 'user',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+
+    }
+
+block header
+  include partials/_header.pug
+
+block main
+  section.profile-edit
+    .wrapper
+      h1.profile-edit__title Редактировать профиль
+      .profile-edit__form
+        form(method="POST" action="#")
+          .form-group
+            label(for="f_name") Имя
+            input#f_name(type="text", placeholder='Введите имя' name='f_name')
+          .form-group
+            label(for="l_name") Фамилия
+            input#l_name(type="text", placeholder='Введите фамилию' name='l_name')
+          .form-group
+              label(for="email") Email
+              input#email(type="text", placeholder='Введите email' name='email')
+          .form-group
+              Label Фотография
+              p Изображение jpg или png, размером больше чем 100х100 пикселей, и весом до 2Мб.
+              input#upload.inputfile(type='file', name='upload' data-multiple-caption="{count} files selected")
+              label(for="upload") Выбрать файл
+                span.name-file
+          .form-group
+              label(for="country") Страна
+              input#country(type="text", placeholder='Введите страну' name='country')
+          .form-group
+              label(for="city") Город
+              input#city(type="text", placeholder='Введите город' name='city')
+          +button("Сохранить", "#")
+          +button("Отмена", "/profile.html")(class="btn__post")
+block footer
+  include partials/_footer.pug
