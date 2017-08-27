@@ -1,0 +1,37 @@
+extends layouts/_default
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'home',
+      title: 'admin',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+
+    }
+
+block header
+  include partials/_header.pug
+
+block main
+  section.works
+    .wrapper
+      .works-title
+        h1 Работы 
+          span которые сделал я и моя команда
+        +button("Добавить работу", "/work-add.html")(class="btn--yellow")
+      .works-grid
+        +work-item("Верстка Landing Page", "work-page.html", "../img/work/work-img-preview.jpg")
+        +work-item("Верстка UI набора", "work-page.html", "../img/work/work-img2-preview.jpg")
+        +work-item("Верстка интернет-магазина", "work-page.html", "../img/work/work-img3-preview.jpg")
+        +work-item("Верстка Landing Page", "work-page.html", "../img/work/work-img-preview.jpg")
+        +work-item("Верстка UI набора", "work-page.html", "../img/work/work-img2-preview.jpg")
+        +work-item("Верстка интернет-магазина", "work-page.html", "../img/work/work-img3-preview.jpg")
+        +work-item("Верстка Landing Page", "work-page.html", "../img/work/work-img-preview.jpg")
+        +work-item("Верстка UI набора", "work-page.html", "../img/work/work-img2-preview.jpg")
+        +work-item("Верстка интернет-магазина", "work-page.html", "../img/work/work-img3-preview.jpg")
+        
+
+block footer
+  include partials/_footer.pug

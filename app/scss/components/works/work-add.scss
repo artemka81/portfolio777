@@ -1,0 +1,27 @@
+.work-add{
+	margin-bottom: 40px;
+	
+	&__form{
+		width: 100%;
+		margin: 0 auto;
+		max-width:945px;
+		
+	}
+}
+
+input.work-add__input, textarea.work-add__textarea{
+		width: 100%;
+		max-width:945px;
+	}
+
+
+.work-add__textarea{
+		height: 200px;		
+}
+
+.work-add__img{
+	display: block;
+	margin-top: 20px;
+	width: 260px;
+	height: auto;
+}

@@ -1,0 +1,51 @@
+extends layouts/_default
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'home',
+      title: 'admin',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+
+    }
+
+block header
+  include partials/_header.pug
+
+block main
+  section.work-add
+    .wrapper
+      .work-add__form
+        h1.work-add__title Добавить работу
+        form(method="POST" action="#")
+          .form-group
+            label(for="work-name") Название
+            input.work-add__input#work-name(type="text", placeholder='Введите название работы' name='work-name')          
+          .form-group
+            Label Изображение
+            p Изображение jpg или png, размером больше чем 100х100 пикселей, и весом до 2Мб.
+            input#upload.inputfile(type='file', name='upload' data-multiple-caption="{count} files selected")
+            label(for="upload") Выбрать файл
+              span
+            span     Файл не выбран 
+          .form-group
+            label Содержание
+            textarea.work-add__textarea( placeholder="Введите описание")
+          .form-group
+            label Результат
+            textarea.work-add__textarea( placeholder="Введите описание")
+          .form-group
+            label Технологии
+            textarea.work-add__textarea( placeholder="Введите описание")
+          .form-group--float
+            label(for="work-url") Ссылка на проект
+            input#work-url(type="text", placeholder='Введите ссылку' name='work-url')
+          .form-group  
+            label(for="work-git") Ссылка на GitHub
+            input#work-git(type="text", placeholder='Введите ссылку' name='work-url')
+          +button("Сохранить", "/work-page.html")
+          +button("Отмена", "/works-admin.html")(class="btn__post")
+block footer
+  include partials/_footer.pug

@@ -33,7 +33,7 @@
 		background: $btn-bg-white;
 		border:2px solid #dde8ee;
 	}
-	&__pref{
+	&__prev{
 		color:$btn-color-blue;
 		background: $btn-bg-white;
 		padding-left:40px; 
@@ -54,8 +54,6 @@
 		&:after{
 			content: " →";
 			position: absolute;
-			top: 12px;
-			left: 90px;
 			color:$btn-color-blue;
 		}
 	}

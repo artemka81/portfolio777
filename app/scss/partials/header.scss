@@ -7,6 +7,22 @@
 	background-position:left;
 }
 
+.header--work{
+	width: 100%;
+	height: 200px;
+	.logo-wrapper{
+		.logo{
+			&__name{
+				color:black;
+			}
+			&__description{
+				color:black;	
+			}
+		}
+	}
+}
+
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
 	
@@ -14,7 +30,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.header{
+	.header, .header--work{
 		display: flex;
 		flex-direction:row;
   	flex-wrap:wrap;

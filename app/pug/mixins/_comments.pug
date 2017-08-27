@@ -4,7 +4,7 @@ mixin comment-form(name)
 			.comments__name= name
 		.comments__input
 			+alert("Комментарий не может быть пустым")(class="alert--danger")
-			textarea( placeholder="Присоединиться к обсуждению...")
+			textarea.comments__textarea( placeholder="Присоединиться к обсуждению...")
 			+button("Опубликовать", "#")(class="btn__post")
 
 mixin comment(name, text)

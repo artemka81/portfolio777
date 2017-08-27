@@ -26,6 +26,7 @@
 }
 .work-item__desc{
 	position: absolute;
+	max-width:320px;
 	width:320px;
 	border-radius: 0 0 6px 6px;
 	bottom: 0;
@@ -40,7 +41,7 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-
+	
 }
 
 /* Small Devices, Tablets */

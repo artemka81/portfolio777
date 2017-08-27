@@ -48,7 +48,7 @@ block main
           +button("Сохранить", "#")(class="btn")
           +button("Отмена", "#")(class="btn__post")
           +button("Читать", "#")(class="btn__post")
-          +button("Назад", "#")(class="btn__pref")
+          +button("Назад", "#")(class="btn__prev")
           +button("Вперед", "#")(class="btn__next")
           +button("Подробнее", "#")(class="btn__post")
           +button("Редактировать", "#")(class="btn--yellow")
@@ -70,7 +70,7 @@ block main
             .col
               +alert("Введите email")(class="alert--danger")
           .row
-            .col-full
+            .col
               +alert("Комментарий не может быть пустым.")(class="alert--danger")
           .row
             .col

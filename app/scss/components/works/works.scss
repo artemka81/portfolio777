@@ -1,0 +1,39 @@
+.works-title{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	h1{
+		span{
+			font-weight: 400;
+		}
+	}
+}
+
+.works-grid{
+	width: 100%;
+	margin-bottom: 40px;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.works-grid{
+		justify-content: space-around;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.works-grid{
+		justify-content: space-between\;
+	}
+}	
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) {
+	
+}
