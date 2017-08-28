@@ -18,3 +18,37 @@
 		padding: 18px 0 36px 0;
 	}
 }
+
+.post-title{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.post-article, .post-nav, .post-commnents, .post-comment-form{
+	max-width: 950px;
+}
+
+.post-commnents, .post-comment-form{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.post-article{
+	margin-bottom: 40px;
+	p{
+		line-height: 2;
+	}
+}
+.post-nav{
+	display: flex;
+	width: 100%;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	margin-bottom: 20px;
+	.btn{
+		margin-bottom: 20px;
+	}
+}

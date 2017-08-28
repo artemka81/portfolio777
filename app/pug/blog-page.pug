@@ -1,0 +1,35 @@
+extends layouts/_default
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'home',
+      title: 'admin',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+
+    }
+
+block header
+  include partials/_header.pug
+    
+
+block main
+  section.blog-page
+    .wrapper
+      +post-page
+      .post-nav
+        +button("Назад", "#")(class="btn__prev")
+        +button("Вперед", "#")(class="btn__next")
+      .post-commnents
+        h2 2 комментария
+        +comment("Джон До", "Замечательный парк, обязательно отправлюсь туда этим летом.")
+        +comment("Джон До", "Замечательный парк, обязательно отправлюсь туда этим летом.")
+      .post-comment-form
+        h2 Оставить комментарий
+        +comment-form("Артем Кихтенко")
+
+
+block footer
+  include partials/_footer.pug

@@ -1,4 +1,4 @@
-.works-title{
+.posts-title{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -11,7 +11,7 @@
 	}
 }
 
-.works-grid{
+.posts-grid{
 	width: 100%;
 	margin-bottom: 40px;
 	display: flex;
@@ -21,14 +21,14 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-	.works-grid{
+	.posts-grid{
 		justify-content: space-around;
 	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.works-grid{
+	.posts-grid{
 		justify-content: space-between;
 	}
 }	

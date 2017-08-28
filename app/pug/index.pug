@@ -26,7 +26,7 @@ block main
         h3.about__what Что я умею
         p Меня привлекет Frontend разработка, это не только моя работа, но и хобби. Также знаком и могу решать не сложные задачи на Backend.
         p Знаком и использую современный workflow, работаю с репозиториями git и сборкой проекта на gulp.
-        +button("Подробнее", "#")(class="btn__post")
+        +button("Подробнее", "/about.html")(class="btn__post")
   section.last-work
     .wrapper
       p.last-work__title Новые 
@@ -36,11 +36,11 @@ block main
         +work-item("Верстка UI набора", "work-page.html", "../img/work/work-img2-preview.jpg")
         +work-item("Верстка интернет-магазина", "work-page.html", "../img/work/work-img3-preview.jpg")
       p.last-work__title Новые записи в 
-        a(href="/blog.html") блоге
+        a(href="/posts-admin.html") блоге
       .last-work-grid
-        +blog-item("Поездка в New York", "../img/blog/blog-img2-preview.jpg", "blog-page.html")
-        +blog-item("Что я делал в долине", "../img/blog/blog-img3-preview.jpg", "blog-page.html")
-        +blog-item("Как я ходил в поход этим летом", "../img/blog/blog-img4-preview.jpg", "blog-page.html")
+        +blog-item("Поездка в New York", "../img/blog/blog-img2-preview.jpg", "post-page.html")
+        +blog-item("Что я делал в долине", "../img/blog/blog-img3-preview.jpg", "post-page.html")
+        +blog-item("Как я ходил в поход этим летом", "../img/blog/blog-img4-preview.jpg", "post-page.html")
 
 block footer
   include partials/_footer.pug

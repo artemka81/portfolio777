@@ -1,0 +1,33 @@
+extends layouts/_default
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'home',
+      title: 'admin',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+
+    }
+
+block header
+  include partials/_header.pug
+
+block main
+  section.posts
+    .wrapper
+      .posts-title
+        h1 Блог веб-разработчика 
+        +button("Добавить пост", "/post-add.html")(class="btn--yellow")
+      .posts-grid
+        +blog-item("Поездка в New York", "../img/blog/blog-img-preview.jpg", "blog-page.html")
+        +blog-item("Что я делал в долине", "../img/blog/blog-img2-preview.jpg", "blog-page.html")
+        +blog-item("Как я ходил в поход этим летом", "../img/blog/blog-img4-preview.jpg", "blog-page.html")
+        +blog-item("Поездка в New York", "../img/blog/blog-img-preview.jpg", "blog-page.html")
+        +blog-item("Что я делал в долине", "../img/blog/blog-img3-preview.jpg", "blog-page.html")
+        +blog-item("Что я делал в долине", "../img/blog/blog-img5-preview.jpg", "blog-page.html")
+        
+
+block footer
+  include partials/_footer.pug
