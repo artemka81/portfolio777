@@ -1,0 +1,39 @@
+extends layouts/_default
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'home',
+      title: 'admin',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+
+    }
+
+block header
+  include partials/_header.pug
+
+block main
+  section.post-add
+    .wrapper
+      .post-add__form
+        h1.post-add__title Добавить пост
+        form(method="POST" action="#")
+          .form-group
+            label(for="post-name") Название
+            input.post-add__input#post-name(type="text", placeholder='Введите имя' name='post-name')          
+          .form-group
+            Label Изображение
+            p Изображение jpg или png, рекомендуемая ширина 945px и больше, высота от 400px и более, вес до 2Мб.
+            input#upload.inputfile(type='file', name='upload' data-multiple-caption="{count} files selected")
+            label(for="upload") Выбрать файл
+              span
+            span     Файл не выбран 
+          .form-group
+            label Содержание
+            textarea.post-add__textarea( placeholder="Введите город")          
+          +button("Сохранить", "/blog-page.html")
+          +button("Отмена", "/posts-admin.html")(class="btn__post")
+block footer
+  include partials/_footer.pug

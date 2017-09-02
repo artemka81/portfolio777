@@ -1,0 +1,81 @@
+.page-sign-up{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+background-image:url('../img/bg-img-sign-up.jpg');
+background-color: #69abd4;
+background-position: left top;
+background-size: cover;
+background-repeat: no-repeat;
+		&:before{
+			content: "";
+			display: block;
+	    position: absolute;
+	    width: 100%;
+	    height: 500px;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index: -1;
+			background:linear-gradient(to top, rgba(104,171,211, 0), rgba(255,255,255,0.06) 20%, rgba(32,124,202,0.06) 60%,rgba(104,171,211,1) 100%);
+		}
+		 &:after{
+			content: "";
+			display: block;
+	    position: absolute;
+	    width: 100%;
+	    height: 400px;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index: -1;
+	    background:linear-gradient(to bottom, rgba(104,171,211, 0), rgba(255,255,255,0.06) 20%, rgba(32,124,202,0.1) 60%,rgba(104,171,211,1) 100%);
+			
+		}
+.wrapper-nav{
+	padding-top: 30px;
+		}
+}
+
+.logo__description{
+	display: none;
+}
+
+.sign-up{
+	
+	
+}
+
+.footer--sign-up{
+	text-align: center;
+	color:white;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	 .footer__copy{
+	 	line-height: 2;
+	 }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.header--sign-up{
+		.wrapper-nav{
+			height: 60px;
+			padding: 40px 0 0 0;
+			justify-content: flex-start;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) {
+	
+
+}

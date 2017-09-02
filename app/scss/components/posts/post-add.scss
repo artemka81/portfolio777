@@ -1,0 +1,27 @@
+.post-add{
+	margin-bottom: 40px;
+	
+	&__form{
+		width: 100%;
+		margin: 0 auto;
+		max-width:945px;
+		
+	}
+}
+
+input.post-add__input, textarea.post-add__textarea{
+		width: 100%;
+		max-width:945px;
+	}
+
+
+.post-add__textarea{
+		height: 200px;		
+}
+
+.post-add__img{
+	display: block;
+	margin-top: 20px;
+	width: 260px;
+	height: auto;
+}

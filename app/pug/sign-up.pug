@@ -1,0 +1,46 @@
+extends layouts/_default
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'sign-up',
+      title: 'guest',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+
+    }
+
+block header
+  header.header--sign-up
+    include components/header/_btn-toggle.pug
+    include components/header/_logo.pug
+    .wrapper-nav#wrapper-nav
+      a.nav-mobile(href="#")
+      .nav-guest
+        if page.name == 'sign-up'
+          a.nav-guest__link(href='log-in.html') Вход
+        else
+          a.nav-guest__link(href='sign-up.html') Регистрация
+    
+    
+
+block main
+  section.sign-up
+    .wrapper
+      h1 dd
+      
+
+block footer
+  footer.footer--sign-up
+    p.footer__copy
+      | © Артём Кихтенко
+      br
+      | Сделано с  
+      i.fa.fa-heart(aria-hidden="true") 
+      |  &nbsp;в&nbsp;
+      span
+        a.footer__link(href="webCademy.ru") &nbsp;WebCademy.ru
+      |  в 2017 году
+
+
