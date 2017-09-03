@@ -1,5 +1,6 @@
 .alert{
 	max-width: 100%;
+	text-align: left;
 	color:$white;
 	border-radius:4px; 
 	padding: 16px 18px;
@@ -8,17 +9,21 @@
 		background: $alert-danger;
 	}
 }
-.alert-error{
+.alert-email-error, .alert-email-pass-error{
 	background:$aletr-bg-error;
 	padding: 16px;
 	border-radius:0 0 4px 4px;
 	p{
 		line-height: 1.4;
 		padding: 0;
-		margin:0;
+		margin:0 0 8px 0;
 		color:$alert-color-error;
 	}
+}
 
+.alert-wrapper{
+		text-align: left;
+		margin-bottom: 30px;
 }
 
 .border-radius-error{

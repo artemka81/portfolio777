@@ -1,0 +1,10 @@
+mixin logo
+	.logo-wrapper
+		.logo
+			if page.name == 'sign-up' 
+				a.logo__name(href="/index.html") Супер Сайт
+			else if page.name == 'log-in'
+				a.logo__name(href="/index.html") Супер Сайт
+			else
+				a.logo__name(href="/index.html") Digital Lifestyle
+				span.logo__description Сайт IT специалиста

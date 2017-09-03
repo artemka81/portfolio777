@@ -1,9 +1,24 @@
 .form-group{
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	&--float{
 		float: left;
 		margin: 0 30px 30px 0;
+	}	
+	&--alert{
+		display: none;
 	}
+	&--checkbox{
+		text-align: left;
+		position: relative;
+		margin-bottom: 10px;
+		@include checkbox;
+	}
+}
+.form-group--checkbox .checkbox-label{
+	display: inline-block;
+	color:#ffffff;
+	font-weight: 400;
+	
 }
 
 label{
@@ -50,8 +65,6 @@ input[type="text"], textarea{
  	padding: 16px;
  	resize: none; 
  }
-
-
 
 
 

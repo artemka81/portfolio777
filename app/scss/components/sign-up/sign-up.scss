@@ -1,4 +1,4 @@
-.page-sign-up{
+.page-sign-up, .page-log-in{
 height: 100vh;
 display: flex;
 flex-direction: column;
@@ -27,7 +27,6 @@ background-repeat: no-repeat;
 	    position: absolute;
 	    width: 100%;
 	    height: 400px;
-	    right: 0;
 	    bottom: 0;
 	    left: 0;
 	    z-index: -1;
@@ -39,14 +38,34 @@ background-repeat: no-repeat;
 		}
 }
 
-.logo__description{
-	display: none;
+.sign-up-form{
+	margin: 0 auto;
+	width: 300px;
+	text-align: center;
+	padding: 40px 30px 40px;
+	border-radius:6px;
+	background: rgba(18, 45, 61, .6);
+	box-shadow:0 0 40px rgba(18, 45, 61, .4);
+	&__title{
+		font-weight: bold;
+		font-size: 28px;
+		color:white;
+		margin-bottom: 40px;
+	}
+	&__input{
+		width: 100%;
+		border:1px solid #ffffff;
+		margin-bottom: 20px;
+		padding:3px 16px;
+	}
+	.btn{
+		margin-top: 10px;
+	}
+	.form-group{
+		margin-bottom: 0;
+	}
 }
 
-.sign-up{
-	
-	
-}
 
 .footer--sign-up{
 	text-align: center;
