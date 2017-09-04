@@ -1,0 +1,73 @@
+extends layouts/_default
+
+block vars
+	-
+		page = {
+			language: 'ru',
+			name: 'home',
+			title: 'admin',
+			appTitle: 'Стартовый шаблон',
+			description: 'Стартовый шаблон для верстки'
+
+		}
+
+block header
+	include partials/_header.pug
+
+block main
+	.wrapper.contact-admin
+		+button("Редактировать", "/contact-edit.html")(class='btn--yellow')
+		+button("Сообщения", "/works-admin.html")(class="btn__post")
+
+
+		.wrapper945.contact-wrapper
+			section.contact
+				h1 Контакты
+				table(width="100%" border="0" cellpadding="6" cellspacing="0")
+					tr
+						td.contact-name(valign="top" width="46%") Email
+						td(align="left") 
+							a(href="mailto:webdev-ninja@mail.ru") webdev-ninja@mail.ru
+					tr
+						td.contact-name(valign="top" width="46%" ) Skype
+						td(align="left")
+							a(href="skype:webdev-ninja?add") webdev-ninja
+					tr
+						td.contact-name(valign="top" width="46%") Социальные сети
+						td.contact-link
+							a(href="#") Профиль Вконтакте
+							a(href="#") Профиль Facebook
+					tr
+						td.contact-name(valign="top" width="46%") Телефон
+						td(align="left")  +595-456-123
+					tr
+						td.contact-name(valign="top" width="46%") Адрес
+						td(align="left") Россия, Московская обл. г.Зеленоград							
+			section.contact-form
+				h1.work-add__title Связаться со мной
+				form(method="POST" action="#")
+					.form-group
+						input.work-add__input#contact-form__name(type="text", placeholder='Введите имя' name='name') 
+					.form-group
+						input.work-add__input#contact-form__email(type="text", placeholder='Введите email' name='email') 
+					.form-group
+						textarea.work-add__textarea( placeholder="Сообщение")
+					.form-group
+						Label Прикрепить файл
+						p jpg, png, pdf, doc, весом до 2Мб.
+						input#upload.inputfile(type='file', name='upload' data-multiple-caption="{count} files selected")
+						label(for="upload") Выбрать файл
+							span
+						span    Файл не выбран						
+					+button("Сохранить", "/work-page.html")
+	section#google-map
+		#google-container
+		#zoom-in
+			a(href="#")
+		#zoom-out
+			a(href="#")
+
+	
+					
+block footer
+	include partials/_footer.pug

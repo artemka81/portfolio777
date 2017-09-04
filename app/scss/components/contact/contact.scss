@@ -1,0 +1,46 @@
+.contact-admin{
+	display: flex;
+	justify-content:flex-end;
+	.btn{
+		margin-bottom: 20px;
+	}
+}
+.contact-wrapper{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding-bottom: 80px;
+	
+}
+
+.contact{
+	max-width: 400px;
+	width: 100%;
+	line-height: 1.5;
+	margin-bottom: 40px;
+	
+}
+
+.contact-form{
+	max-width: 360px;
+	width: 100%;	
+}
+.contact-form .form-group{
+	margin-bottom: 10px;
+}
+.contact-form .inputfile + label[for="upload"] {
+	border-radius:50px;
+	padding: 13px 18px;
+}
+.contact-name{
+	font-weight: 800;
+}
+.contact-link{
+	text-align: left;
+	a{
+		display: block;
+		font-weight: 800;
+		margin-bottom: 4px;
+				
+	}
+}
