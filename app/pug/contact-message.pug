@@ -1,0 +1,26 @@
+extends layouts/_default
+
+block vars
+	-
+		page = {
+			language: 'ru',
+			name: 'home',
+			title: 'admin',
+			appTitle: 'Стартовый шаблон',
+			description: 'Стартовый шаблон для верстки'
+
+		}
+
+block header
+	include partials/_header.pug
+
+block main
+	.wrapper
+		.wrapper945
+			section
+				h1 Сообщения от посетителей
+				+comment-user
+		
+					
+block footer
+	include partials/_footer.pug

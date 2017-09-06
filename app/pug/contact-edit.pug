@@ -1,0 +1,56 @@
+extends layouts/_default
+
+block vars
+  -
+    page = {
+      language: 'ru',
+      name: 'home',
+      title: 'admin',
+      appTitle: 'Стартовый шаблон',
+      description: 'Стартовый шаблон для верстки'
+
+    }
+
+block header
+  include partials/_header.pug
+
+block main
+  section.contact-edit
+    .wrapper
+      .contact-edit__form
+        h1.contact-edit__title Редактировать контакты
+        form(method="POST" action="#")          
+          .form-group--float
+            label(for="f_name") Имя
+            input#f_name(type="text", placeholder='Введите имя' name='f_name')
+          .form-group
+            label(for="l_name") Фамилия
+            input#l_name(type="text", placeholder='Введите Фамилия' name='l_name')
+          .form-group--float
+            label(for="email") Email
+            input#email(type="text", placeholder='Введите email' name='email')
+          .form-group
+            label(for="skype") Skype
+            input#skype(type="text", placeholder='Введите skype' name='skype')
+          .form-group--float
+            label(for="vk") Вконтакте
+            input#vk(type="text", placeholder='Введите ссылку на профиль' name='vk')
+          .form-group--float
+            label(for="fb") Facebook
+            input#fb(type="text", placeholder='Введите ссылку на профиль' name='fb')
+          .form-group--float
+            label(for="git") Github
+            input#git(type="text", placeholder='Введите ссылку на профиль' name='git')
+          .form-group
+            label(for="twitter") Twitter
+            input#twitter(type="text", placeholder='Введите ссылку на профиль' name='twitter')
+          .form-group--float
+            label(for="tel") Телефон
+            input#tel(type="text", placeholder='Введите номер телефона' name='tel')
+          .form-group
+            label(for="adress") Адрес
+            input#adress(type="text", placeholder='Введите адрес' name='adress')
+          +button("Сохранить", "/work-page.html")
+          +button("Отмена", "/works-admin.html")(class="btn__post")
+block footer
+  include partials/_footer.pug
